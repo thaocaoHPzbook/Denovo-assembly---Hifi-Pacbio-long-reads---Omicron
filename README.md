@@ -27,8 +27,18 @@ pip install multiqc
 ```
 
 **2. Run multiqc**
-***2.1. create script file to run fastqc
+***2.1. create script file to run fastqc***
 ```bash
 nano run_fastqc.sh
 ```
+
+***2.2. run the script***
+```bash
+chmod +x run_fastqc.sh
+./run_fastqc.sh
+```
+Read the full multiqc report name **multiqc_report.html**
+
+
+
 

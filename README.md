@@ -49,7 +49,7 @@ https://github.com/marbl/canu
 **2. Combine all the fastq file**
 ```bash
 cd home/hp/Hifi_Pacbio_Sarscovi2
-cat hifi_reads.fastq* > merged_hifi_reads.fastq
+cat *hifi_reads.fastq > merged_hifi_reads.fastq
 ```
 
 **2. Run canu 2.2**

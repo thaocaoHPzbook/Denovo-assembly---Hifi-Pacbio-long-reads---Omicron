@@ -54,8 +54,8 @@ cat *hifi_reads.fastq > merged_hifi_reads.fastq
 
 **2. Run canu 2.2**
 ```bash
-canu -p hifi_assembly -d merged_hifi_reads.fastq genomeSize=30k minReadLength=500 minOverlapLength=70\
- -pacbio-hifi 1.test.fastq.gz -maxThreads=8 corThreads=8
+canu -p hifi_assembly -d output_directory genomeSize=30k minReadLength=500 minOverlapLength=70 \
+-pacbio-hifi merged_hifi_reads.fastq -maxThreads=8 corThreads=8
 ```
 The denovo assembly results is in folder name **hifi_assembly**
 

@@ -91,13 +91,14 @@ conda deactivate
 conda activate racon_env
 mkdr racon_output
 racon merged_hifi_reads.fastq aligned_reads.sam hifi_assembly.contigs.fasta > racon_output/Covid_19.contigs.polished.fasta
+conda deactivate
 ```
 The polishing results is in **racon_output** folder, file named **Covid_19.contigs.polished.fasta**.
 
 #   QUAST after polishing
 ```bash
 cd home/hp/Hifi_Pacbio_Sarscovi2/hifi_assembly/racon_output
-quast Covid_19.contigs.polished.fasta -o quast_after_polishing
+quast.py Covid_19.contigs.polished.fasta -o quast_after_polishing
 ```
 QUAST results is in **quast_after_polishing** folder - file named **report.html**
 

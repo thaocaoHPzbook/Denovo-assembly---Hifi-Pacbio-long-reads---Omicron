@@ -54,6 +54,7 @@ cat *hifi_reads.fastq > merged_hifi_reads.fastq
 
 **2. Run canu 2.2**
 ```bash
+conda activate canu_2_2_env
 canu -p hifi_assembly -d output_directory genomeSize=30k minReadLength=500 minOverlapLength=70 \
 -pacbio-hifi merged_hifi_reads.fastq -maxThreads=8 corThreads=8
 ```

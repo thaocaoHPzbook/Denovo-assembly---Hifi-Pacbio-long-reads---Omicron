@@ -83,7 +83,13 @@ https://github.com/isovic/racon
 **2. Run racon**
 ```bash
 cd home/hp/Hifi_Pacbio_Sarscovi2/hifi_assembly
+conda activate minimap2_env
 minimap2 -ax map-hifi hifi_assembly.contigs.fasta merged_hifi_reads.fastq > aligned_reads.sam
+conda deactivate
+```
+```bash
+conda activate racon_env
+mkdr racon_output
 racon merged_hifi_reads.fastq aligned_reads.sam hifi_assembly.contigs.fasta > racon_output/Covid_19.contigs.polished.fasta
 ```
 The polishing results is in **racon_output** folder, file named **Covid_19.contigs.polished.fasta**.

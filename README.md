@@ -69,7 +69,7 @@ https://github.com/ablab/quast
 
 **2. Run QUAST**
 ```bash
-quast hifi_assembly.contigs.fasta -o quast_output
+quast.py hifi_assembly.contigs.fasta -o quast_output
 ```
 Read the QUAST results in QUAST in folder **quast_output** file name **report.html**
 

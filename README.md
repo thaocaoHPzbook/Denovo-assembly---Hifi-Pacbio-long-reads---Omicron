@@ -168,6 +168,7 @@ awk '/^>/{print; header=$0; seq=""} !/^>/{gsub(/N/, "", $0); seq=seq $0} END{if 
 
 **3. Genome annotation with prokka**
 ```bash
+conda activate prokka_env
 prokka --outdir prokka_cleaned_scaffold --prefix my_genome --cpus 8 --kingdom Viruses cleaned_scaffold.fasta
 ```
 Read the annotation results in **prokka_cleaned_scaffold** folder, file named **my_genome.tsv**
